@@ -65,3 +65,27 @@
     filter: grayscale(1);
     border-radius: 7px;
 }
+/* esercizio 10 */
+.ex-10-icon:hover {
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+/* esercizio 11 */
+.ex-11-icon:hover {
+    animation: spin-2 2s linear infinite;
+}
+
+@keyframes spin-2 {
+    0% { transform: rotate(0deg); }
+    75% { transform: rotate(270deg); }
+}
+
+@keyframes spin-2 {
+    75% { transform: rotate(270deg); }
+    100% { transform: rotate(0deg); }
+}
+
