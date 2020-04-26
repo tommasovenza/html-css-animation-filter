@@ -1,35 +1,37 @@
 /* esercizio 1 */
-.ex-1-square:hover {
+.ex-1-square {
     transition: background-color 1s linear;
+}
+.ex-1-square:hover {
     background-color: red;
 }
 /* esercizio 2 */
-.ex-2-square:active {
+.ex-2-square {
     transition: width 2s linear;
+}
+.ex-2-square:active {
     width: 100%;
 }
 /* esercizio 3 */
+.ex-3-square {
+    transition: border-radius 1s linear;
+}
 .ex-3-square:hover {
-    transition: border-radius 2s linear;
     border-radius: 50%;
 }
 /* esercizio 4 */
-.ex-4-square:hover {
+.ex-4-square {
     transition: background-color 3s linear;
+}
+.ex-4-square:hover {
     background-color: transparent;
 }
 /* esercizio 5 */
 .ex-5-square:hover {
-    transition:  1s ease-in-out;
-    transition:  1s ease-in-out;
-    width: 100px;
-    height: 100px;
+    transform: scale(2);
 }
 .ex-5-square:active {
-    transition: width 30px 1s ease-in-out;
-    transition: height 30px 1s ease-in-out;
-    width: 30px;
-    height: 30px;
+    transform: scale(.5);
 }
 /* esercizio 6 */
 
@@ -66,7 +68,7 @@
     border-radius: 7px;
 }
 /* esercizio 10 */
-.ex-10-icon:hover {
+.ex-10-icon {
     animation: spin 2s linear infinite;
 }
 
@@ -88,4 +90,108 @@
     75% { transform: rotate(270deg); }
     100% { transform: rotate(0deg); }
 }
+
+/* esercizio 12 */
+.ex-12-top-white {
+    animation: move1 linear 3s;
+}
+
+@keyframes move1 {
+    
+    25% {
+        left: 34%;
+    }
+
+    50% {
+        left: 69%;
+    }
+
+    75% {
+        left: 34%;
+    }
+
+    100% {
+        left: 10%;
+    }
+}
+
+.ex-12-bottom-white {
+    animation: move2 linear 3s;
+}
+
+@keyframes move2 {
+    
+    25% {
+        right: 34%
+    }
+
+    50% {
+        right: 69%; 
+    }
+
+    75% {
+        right: 34%;
+    }
+
+    100% {
+        right: 0%;
+    }
+}
+/* esercizio 13 */
+.ex-13-top-white {
+    animation: move3 linear 3s;
+}
+
+@keyframes move3 {
+    
+    25% {
+        left: 85%;
+        top: -10px;
+    }
+
+    50% {
+        left: 85%;
+        top: 50px;
+    }
+
+    75% {
+        top: 50px;
+        left: -15%;
+    }
+
+    100% {
+        left: 10%;
+        top: -10px;
+    }
+}
+
+.ex-13-bottom-white {
+    animation: move4 linear 3s;
+}
+
+@keyframes move4 {
+    
+    25% {
+        bottom: 20px;
+        right: 85%
+    }
+
+    50% {
+        right: 45%;
+        bottom: 55px; 
+    }
+
+    75% {
+        right: -15%;
+        bottom: 55px;
+    }
+
+    100% {
+        right: 20%;
+        bottom: -10px;
+    }
+}
+
+
+
 
