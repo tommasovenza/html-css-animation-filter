@@ -92,8 +92,9 @@
 }
 
 /* esercizio 12 */
-.ex-12-top-white {
-    animation: move1 linear 3s;
+
+.ex-12-button:hover .ex-12-top-white {
+    animation: move1 linear 1s;
 }
 
 @keyframes move1 {
@@ -115,8 +116,8 @@
     }
 }
 
-.ex-12-bottom-white {
-    animation: move2 linear 3s;
+.ex-12-button:hover .ex-12-bottom-white {
+    animation: move2 linear 1s;
 }
 
 @keyframes move2 {
@@ -138,7 +139,7 @@
     }
 }
 /* esercizio 13 */
-.ex-13-top-white {
+.ex-13-button:hover .ex-13-top-white {
     animation: move3 linear 3s;
 }
 
@@ -165,7 +166,7 @@
     }
 }
 
-.ex-13-bottom-white {
+.ex-13-button:hover .ex-13-bottom-white {
     animation: move4 linear 3s;
 }
 
